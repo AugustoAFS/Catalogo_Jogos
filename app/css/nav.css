@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2c3656;
+    padding: 10px 10px;
+    color: white;
+}
+
+.navbar nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    position: relative;
+}
+
+.navbar nav ul li{
+    margin: 0 10px;
+}
+
+.navbar nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    line-height: auto;
+    font-size: 16px;
+    padding: 8px 20px;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo button{
+    background-color: #1d1f2700;
+    border: solid 5px #DAA520;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 50px;
+    padding: 5px;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #ffd700;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.coin button{
+    background-color: #ffffff00;
+    border: solid 5px #C0C0C0;
+    border-radius: 30px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+}
+
+.coin button img{
+    width: 50px;
+    padding: 5px;
+}
+
+.cart button{
+    background-color: #ffffff00;
+    border: solid 5px #DAA520;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cart img{
+    width: 50px;
+    padding: 10px;
+}

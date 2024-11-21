@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d1f27;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+}
+
+.folder{
+    display: flex;
+    white-space: wrap;
+}
+
+.folder .plane {
+    width: 20%;
+    padding: 20px;
+    background-color: #757373;
+    border-radius: 30px;
+}
+
+.folder .plane h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.folder .plane button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.folder .featured img{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.categories {
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.games {
+    display: flex;
+    gap: 15px;
+}
