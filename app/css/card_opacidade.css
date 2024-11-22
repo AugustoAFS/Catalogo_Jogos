@@ -1,0 +1,38 @@
+/* Detalhes adicionais (ocultos inicialmente) */
+.card-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    background-color: rgba(105, 105, 105, 0.8);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de zoom no card */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+    max-width: 200vw;
+}
+
+/* Mostrar os detalhes ao passar o mouse no card */
+.card:hover .card-details {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    display: block;
+}
+
+.card.show-details .card-details {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    display: block;
+}

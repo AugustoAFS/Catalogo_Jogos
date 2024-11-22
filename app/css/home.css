@@ -78,9 +78,9 @@
 /* Jogos dentro de categorias */
 .games {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 45px;
+    padding: 10px;
 }
 
 .games button {
@@ -88,17 +88,15 @@
     background: none;
     border: none;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 /* Estilos para as imagens dentro dos botões */
 .games img {
-    width: 100%;
-    max-width: 150px;
+    width: 100vw;
+    max-width: 120px;
     height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efeito hover para imagens de jogos */
