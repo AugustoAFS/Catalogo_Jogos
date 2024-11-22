@@ -1,45 +1,41 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1d1f27;
-    color: #fff;
-}
-
+/* Container principal */
 .container {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
+/* Seção Principal */
 .main {
     display: flex;
 }
 
-.folder{
+/* Seção do folder */
+.folder {
     display: flex;
-    white-space: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     padding: 20px;
-    background-color: #1d1f27;
+    flex-direction: row;
 }
 
+/* Plane dentro de folder */
 .folder .plane {
     display: flex;
-    width: 25%;
+    width: 30%;
+    height: 20vw;
     padding: 20px;
     background-color: #757373;
     border-radius: 30px;
-    flex-direction: column;
     justify-content: space-between;
 }
 
 .folder .plane h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px 0;
+    margin-bottom: 10px;
     color: white;
 }
+
 .folder .plane p {
     font-size: 1rem;
     margin: 10px 0;
@@ -54,17 +50,20 @@ body {
     margin-top: 20px;
     font-weight: bold;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.folder .featured {
-    width: 70%;
+.folder .plane button:hover {
+    background-color: #f4c542;
 }
 
-.folder .featured img{
-    width: 100%;
+.folder .featured img {
+    width: 65vw;
+    height: 20vw;
     border-radius: 20px;
 }
 
+/* Categorias */
 .categories {
     padding: 20px;
 }
@@ -72,9 +71,42 @@ body {
 .categories h2 {
     font-size: 1.2rem;
     margin: 20px 0;
+    color: #ffd700;
 }
 
+/* Jogos dentro de categorias */
 .games {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.games button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Estilos para as imagens dentro dos botões */
+.games img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover para imagens de jogos */
+.games :hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover sobre o botão */
+.games :hover {
+    transform: scale(1.05);
 }
