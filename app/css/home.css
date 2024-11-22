@@ -18,18 +18,32 @@ body {
 .folder{
     display: flex;
     white-space: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1d1f27;
 }
 
 .folder .plane {
-    width: 20%;
+    display: flex;
+    width: 25%;
     padding: 20px;
     background-color: #757373;
     border-radius: 30px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .folder .plane h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px 0;
+    color: white;
+}
+.folder .plane p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: white;
 }
 
 .folder .plane button {
@@ -38,11 +52,17 @@ body {
     padding: 10px;
     cursor: pointer;
     margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.folder .featured {
+    width: 70%;
 }
 
 .folder .featured img{
     width: 100%;
-    padding-left: 50px;
+    border-radius: 20px;
 }
 
 .categories {
