@@ -1,38 +1,88 @@
+/* Estilo geral do card */
+.card {
+    width: 100%;
+    max-width: 300px; /* Define um tamanho máximo para manter a consistência */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Previne o conteúdo de ultrapassar o card */
+    position: relative; /* Necessário para posicionar os detalhes absolutos */
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    margin: 20px auto; /* Centraliza e adiciona espaçamento */
+}
+
+/* Efeito de zoom no card */
+.card:hover {
+    transform: scale(1.05); /* Aumenta levemente o card */
+}
+
 /* Detalhes adicionais (ocultos inicialmente) */
 .card-details {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 150px;
-    background-color: rgba(105, 105, 105, 0.8);
-    font-size: 0.9rem;
+    width: 100%;
+    height: 100%;
+    background-color: #757373; /* Fundo translúcido para foco no conteúdo */
+    font-size: 1rem; /* Ajuste do tamanho da fonte */
     color: #fff;
-    padding: 10px;
-    font-size: 0.9rem;
+    padding: 15px;
+    box-sizing: border-box;
     opacity: 0;
     visibility: hidden;
     transform: translateY(100%);
-    transition: opacity 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-/* Efeito de zoom no card */
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
-    max-width: 200vw;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    display: flex; /* Facilita alinhamento do conteúdo */
+    flex-direction: column; /* Para organizar elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
 }
 
 /* Mostrar os detalhes ao passar o mouse no card */
 .card:hover .card-details {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
-    display: block;
+    transform: translateY(0); /* Traz os detalhes para dentro do card */
 }
 
+/* Forçar exibição dos detalhes via classe */
 .card.show-details .card-details {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    display: block;
+}
+
+/* Adicionando efeitos visuais ao conteúdo dos detalhes */
+.card-details p {
+    margin: 10px 0;
+    font-size: 1rem; /* Tamanho consistente */
+}
+
+.card-details button {
+    background-color: #ffd700; /* Botão com cor chamativa */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover no botão */
+.card-details button:hover {
+    background-color: #ffa500; /* Cor de destaque no hover */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 90%; /* Reduz o tamanho no mobile */
+        margin: 10px auto; /* Espaçamento menor */
+    }
+
+    .card-details {
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
 }

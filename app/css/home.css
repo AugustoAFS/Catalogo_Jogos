@@ -93,9 +93,8 @@
 
 /* Estilos para as imagens dentro dos botões */
 .games img {
-    width: 100vw;
-    max-width: 120px;
-    height: auto;
+    width: 150px;
+    height: 200px;
     border-radius: 10px;
 }
 
