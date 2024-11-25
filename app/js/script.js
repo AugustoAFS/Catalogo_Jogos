@@ -1,55 +1,31 @@
+"use strict"
 $(document).ready(function () {
-    // Dados fictícios para os cards
-    const games = [
-        { name: "Ghost of Tsushima", price: "R$ 200,00", img: "assets/ghost.webp" },
-        { name: "Elden Ring", price: "R$ 250,00", img: "assets/elden_ring.webp" },
-        { name: "Demon's Souls", price: "R$ 300,00", img: "assets/demon_souls.png" },
-        { name: "God of War", price: "R$ 220,00", img: "assets/god1.webp" },
-    ];
+    // Selecionando os elementos da sidebar esquerda e direita
+    const openLeftSidebarBtn = document.getElementById("open-left-sidebar");
+    const closeCartBtn = document.getElementById("close-cart");
+    const openRightSidebarBtn = document.getElementById("open-right-sidebar");
+    const leftSidebar = document.getElementById("left-sidebar");
+    const rightSidebar = document.getElementById("right-sidebar");
+    const overlay = document.getElementById("overlay");
 
-    // Renderiza os cards dinamicamente
-    function renderCards(gamesArray, containerId) {
-        gamesArray.forEach((game) => {
-            const card = `
-                <div class="card" tabindex="0">
-                    <img src="${game.img}" alt="${game.name}">
-                    <div class="card-details">
-                        <h3>${game.name}</h3>
-                        <p>${game.price}</p>
-                        <button class="add-to-cart">Colocar no carrinho</button>
-                        <div class="rating">
-                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                        </div>
-                    </div>
-                </div>
-            `;
-            $(`#${containerId}`).append(card);
-        });
-    }
-
-    // Inicializa os cards
-    renderCards(games, "favorites");
-    renderCards(games, "action");
-
-    // Função de busca
-    $("#search-btn").click(function () {
-        const query = $("#search-input").val().toLowerCase();
-        $(".card").each(function () {
-            const title = $(this).find("h3").text().toLowerCase();
-            $(this).toggle(title.includes(query));
-        });
+    openLeftSidebarBtn.addEventListener("click", function() {
+        leftSidebar.classList.add("active");
+        overlay.classList.add("active");
     });
 
-    // Inscrição no Games+
-    $("#subscribe-btn").click(function () {
-        alert("Você se inscreveu no Augusto Games+!");
+    overlay.addEventListener("click", function() {
+        leftSidebar.classList.remove("active");
+        rightSidebar.classList.remove("active");
+        overlay.classList.remove("active");
     });
-});
 
+    openRightSidebarBtn.addEventListener("click", function() {
+        rightSidebar.classList.add("active");
+        overlay.classList.add("active");
+    });
 
-$(document).ready(function () {
-    $(".add-to-cart").on("click", function () {
-        const gameName = $(this).closest(".card-details").find("h3").text();
-        alert(`"${gameName}" foi adicionado ao seu carrinho!`);
+    closeCartBtn.addEventListener("click", function() {
+        rightSidebar.classList.remove("active");
+        overlay.classList.remove("active");
     });
 });

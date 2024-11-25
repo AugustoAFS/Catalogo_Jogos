@@ -1,16 +1,13 @@
-/* Container principal */
 .container {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-/* Seção Principal */
 .main {
     display: flex;
 }
 
-/* Seção do folder */
 .folder {
     display: flex;
     justify-content: space-between;
@@ -20,7 +17,6 @@
     padding: 30px;
 }
 
-/* Plane dentro de folder */
 .folder .plane {
     display: flex;
     width: 30%;
@@ -64,7 +60,6 @@
     border-radius: 20px;
 }
 
-/* Categorias */
 .categories {
     padding: 20px;
 }
@@ -75,7 +70,6 @@
     color: #ffd700;
 }
 
-/* Jogos dentro de categorias */
 .games {
     display: flex;
     flex-wrap: nowrap;
@@ -91,20 +85,17 @@
     text-align: center;
 }
 
-/* Estilos para as imagens dentro dos botões */
 .games img {
     width: 150px;
     height: 200px;
     border-radius: 10px;
 }
 
-/* Efeito hover para imagens de jogos */
 .games :hover img {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Hover sobre o botão */
 .games :hover {
     transform: scale(1.05);
 }

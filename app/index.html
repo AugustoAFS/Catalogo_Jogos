@@ -7,248 +7,94 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/card_opacidade.css">
     <title>Catálogo de Jogos</title>
 </head>
 <body>
-    <div class="container">
-        <header class="navbar">
-            <div class="logo"><button><img src="assets/icones/Personagem.webp" alt=""></button>Augusto Games</div>
-            <nav>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PROMOÇÃO</a></li>
-                    <li><a href="">AJUDA</a></li>
-                </ul>
-            </nav>
-            <div class="search">
-                <input type="text" placeholder="Pesquisar...">
-                <button><i class="fi fi-rr-search"></i></button>
-            </div>
-            <div class="coin"><button>Coin:<img src="assets/icones/coin.webp" alt=""></button></div>
-            <div class="cart"><button><img src="assets/icones/carrinho-de-compras.webp" alt=""></button></div>
-        </header>
-
-        <main>
-            <div class="folder">
-                <section class="plane">
-                    <div class="catalog-info">
-                        <h2>Video Game<br>Catálogo</h2>
-                        <p>1.358 Jogos</p>
-                        <p>Criamos este catálogo de games para que vocês, consumidores, aproveitem o que há de melhor no mercado de games, com um preço justo.</p>
-                        <button>Augusto Games+</button>
-                    </div>
-                </section>
-                <section class="featured">
-                    <img src="assets/folders/baner_ghost.png" alt="Jogo em destaque">
-                </section>
-            </div>
-
-            <section class="categories">
-                <h2>Favoritos</h2>
-                <div class="games">
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/ghost.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god1.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>God of War</h3>
-                                <p>R$: 150,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god2.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>God fo War 2</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god3.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>God fo War 3</h3>
-                                <p>R$: 250,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god4.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>God fo War: 2018</h3>
-                                <p>R$: 300,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god5.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>God fo War: Ragnarok</h3>
-                                <p>R$: 350,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/elden_ring.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Elden Ring</h3>
-                                <p>R$: 300,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/demon_souls.png" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Demon Souls</h3>
-                                <p>R$: 300,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-
-                </div>
-
-                <h2>Ação</h2>
-                <div class="games">
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god4.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god5.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/ghost.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/elden_ring.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/demon_souls.png" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god1.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god2.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                    <div class="card" tabindex="0">
-                        <img src="assets/god3.webp" alt="Imagem do Produto">
-                            <div class="card-details">
-                                <h3>Ghost of Tsushima</h3>
-                                <p>R$: 200,00</p>
-                                <button class="add-to-cart">Colocar no carrinho</button>
-                                    <div class="rating">
-                                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                                    </div>
-                            </div>
-                    </div>
-
-                </div>  
-            </section>
-        </main>
+    
+<div class="left-sidebar" id="left-sidebar">
+    <div class="user-info">
+        <p>Usuário</p>
+        <p>Informações</p>
     </div>
-    <script src="js/script.js"></script>
+    <div class="games-section">
+        <button>Jogos</button>
+        <button>Favoritos</button>
+    </div>
+</div>
+
+<div class="right-sidebar" id="right-sidebar">
+    <div class="cart-header">
+        <h3>Carrinho</h3>
+        <button id="close-cart">Fechar</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+    </div>
+    <div class="cart-total">
+        <p>Total: <span id="total-price">R$: 0,00</span></p>
+        <button id="checkout-btn">Finalizar Compra</button>
+    </div>
+</div>
+
+<div id="overlay" class="overlay"></div>
+
+<div class="container">
+    <header class="navbar">
+        <div class="logo">
+            <button id="open-left-sidebar">
+                <img src="assets/icones/Personagem.webp" alt="Personagem">
+            </button>
+            Augusto Games
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PROMOÇÃO</a></li>
+                <li><a href="">AJUDA</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button id="search-btn"><i class="fi fi-rr-search"></i></button>
+        </div>
+        <div class="coin"><button>Coin:<img src="assets/icones/coin.webp" alt=""></button></div>
+        <div class="cart"><button id="open-right-sidebar"><img src="assets/icones/carrinho-de-compras.webp" alt=""></button></div>
+    </header>
+
+    <main>
+        <div class="folder">
+            <section class="plane">
+                <div class="catalog-info">
+                    <h2>Video Game<br>Catálogo</h2>
+                    <p>1.358 Jogos</p>
+                    <p>Criamos este catálogo de games para que vocês, consumidores, aproveitem o que há de melhor no mercado de games, com um preço justo.</p>
+                    <button>Augusto Games+</button>
+                </div>
+            </section>
+            <section class="featured">
+                <img src="assets/folders/baner_ghost.png" alt="Jogo em destaque">
+            </section>
+        </div>
+
+        <section class="categories">
+            <h2>Favoritos</h2>
+            <div class="games" id="favorites">
+
+            </div>
+
+            <h2>Ação</h2>
+            <div class="games" id="action">
+
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="js/Card-Games.js"></script>
+<script src="js/SideBarLeft.js"></script>
+<script src="js/SideBarRight.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
