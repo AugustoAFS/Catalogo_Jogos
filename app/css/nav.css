@@ -55,7 +55,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     padding: 8px 20px;
-    white-space: nowrap;
+    white-space: wrap;
     position: relative;
 }
 
@@ -126,4 +126,175 @@ body {
 .cart img {
     width: 50px;
     padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+}
+
+.folder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-direction: row;
+}
+
+.folder .plane {
+    display: flex;
+    width: 30%;
+    height: 20vw;
+    padding: 20px;
+    background-color: #757373;
+    border-radius: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.folder .plane h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.folder .plane p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.folder .plane button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.folder .plane button:hover {
+    background-color: #f4c542;
+}
+
+.folder .featured img {
+    width: 65vw;
+    height: 20vw;
+    border-radius: 20px;
+}
+
+.categories {
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #ffd700;
+}
+
+.games {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 45px;
+    padding: 10px;
+}
+
+.games button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.games img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.games :hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.games :hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .folder {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .folder .plane {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .folder .featured img {
+        width: 100%;
+        height: auto;
+    }
+
+    .games {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .games img {
+        width: 120px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .folder .plane h2 {
+        font-size: 1.2rem;
+    }
+
+    .folder .plane p {
+        font-size: 0.9rem;
+    }
+
+    .categories h2 {
+        font-size: 1rem;
+    }
+
+    .games img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .games {
+        justify-content: center;
+    }
 }

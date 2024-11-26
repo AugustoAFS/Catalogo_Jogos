@@ -1,31 +1,33 @@
-"use strict"
+"use strict";
+
 $(document).ready(function () {
-    // Selecionando os elementos da sidebar esquerda e direita
-    const openLeftSidebarBtn = document.getElementById("open-left-sidebar");
-    const closeCartBtn = document.getElementById("close-cart");
-    const openRightSidebarBtn = document.getElementById("open-right-sidebar");
-    const leftSidebar = document.getElementById("left-sidebar");
-    const rightSidebar = document.getElementById("right-sidebar");
-    const overlay = document.getElementById("overlay");
+    // Selecionando elementos com jQuery
+    const $openLeftSidebarBtn = $("#open-left-sidebar");
+    const $openRightSidebarBtn = $("#open-right-sidebar");
+    const $closeCartBtn = $("#close-cart");
+    const $overlay = $("#overlay");
+    const $leftSidebar = $("#left-sidebar");
+    const $rightSidebar = $("#right-sidebar");
 
-    openLeftSidebarBtn.addEventListener("click", function() {
-        leftSidebar.classList.add("active");
-        overlay.classList.add("active");
+    function openSidebar(sidebar) {
+        sidebar.addClass("active");
+        $overlay.addClass("active");
+    }
+
+    function closeSidebars() {
+        $leftSidebar.removeClass("active");
+        $rightSidebar.removeClass("active");
+        $overlay.removeClass("active");
+    }
+
+    $openLeftSidebarBtn.on("click", function () {
+        openSidebar($leftSidebar);
     });
 
-    overlay.addEventListener("click", function() {
-        leftSidebar.classList.remove("active");
-        rightSidebar.classList.remove("active");
-        overlay.classList.remove("active");
+    $openRightSidebarBtn.on("click", function () {
+        openSidebar($rightSidebar);
     });
 
-    openRightSidebarBtn.addEventListener("click", function() {
-        rightSidebar.classList.add("active");
-        overlay.classList.add("active");
-    });
-
-    closeCartBtn.addEventListener("click", function() {
-        rightSidebar.classList.remove("active");
-        overlay.classList.remove("active");
-    });
+    $closeCartBtn.on("click", closeSidebars);
+    $overlay.on("click", closeSidebars);
 });

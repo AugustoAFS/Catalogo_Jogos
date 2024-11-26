@@ -7,35 +7,53 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/sidebar_cart.css">
+    <link rel="stylesheet" href="css/sidebar_config.css">
     <link rel="stylesheet" href="css/card_opacidade.css">
     <title>Catálogo de Jogos</title>
 </head>
 <body>
     
 <div class="left-sidebar" id="left-sidebar">
-    <div class="user-info">
-        <p>Usuário</p>
-        <p>Informações</p>
+    <divc class="config">
+        <section class="config-user">
+            <h3>Olá {nome do usuario}</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">Lista de desejos</a></li>
+                </ul>
+            </nav>
+        </section>
+        <br>
+        <section class="config-members">
+            <h3>Augusto Games +</h3>
+        </section>
+        <br>
+        <section class="config-catalog">
+            <h3>Configurações</h3>
+        </section>
     </div>
-    <div class="games-section">
-        <button>Jogos</button>
-        <button>Favoritos</button>
+
+</div>
+<div class="right-sidebar" id="right-sidebar">
+    <div class="cart-full">
+        <h3 class="cart-title">Carrinho</h3>
+        
+        <button class="cart-close-btn" id="close-cart">Fechar</button>
+
+        <div class="cart-items" id="cart-items">
+        
+        </div>
+        <div class="cart-total">
+            <span class="cart-total-label"></span>
+            <span class="cart-total-price" id="total-price">R$: 0,00</span>
+        </div>
+
+        <button class="cart-checkout-btn" id="checkout-btn">Finalizar Compra</button>
+        <button class="cart-clear-btn" id="clear-cart-btn">Limpar Carrinho</button>
     </div>
 </div>
 
-<div class="right-sidebar" id="right-sidebar">
-    <div class="cart-header">
-        <h3>Carrinho</h3>
-        <button id="close-cart">Fechar</button>
-    </div>
-    <div class="cart-items" id="cart-items">
-    </div>
-    <div class="cart-total">
-        <p>Total: <span id="total-price">R$: 0,00</span></p>
-        <button id="checkout-btn">Finalizar Compra</button>
-    </div>
-</div>
 
 <div id="overlay" class="overlay"></div>
 
@@ -50,9 +68,9 @@
 
         <nav>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">PROMOÇÃO</a></li>
-                <li><a href="">AJUDA</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROMOÇÃO</a></li>
+                <li><a href="#">AJUDA</a></li>
             </ul>
         </nav>
         <div class="search">
@@ -89,12 +107,14 @@
 
             </div>
         </section>
-    </main>
-</div>
 
-<script src="js/Card-Games.js"></script>
-<script src="js/SideBarLeft.js"></script>
-<script src="js/SideBarRight.js"></script>
-<script src="js/script.js"></script>
+    </main>
+<footer>
+    <p>©Augusto Farias dos Santos - Todos os direitos reservados.</p> 
+</footer>
+</div>
+    <script src="js/Card-Games.js"></script>
+    <script src="js/Cart.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

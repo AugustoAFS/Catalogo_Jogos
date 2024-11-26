@@ -1,22 +1,25 @@
-"use strict"
+"use strict";
+
 $(document).ready(function () {
-    // Lista de jogos
     const games = [
-        { name: "Ghost of Tsushima", price: 200.00, img: "assets/ghost.webp" },
-        { name: "Elden Ring", price: 250.00, img: "assets/elden_ring.webp" },
-        { name: "God of War", price: 150.00, img: "assets/god1.webp" },
-        { name: "God of War 2", price: 200.00, img: "assets/god2.webp" },
-        { name: "God of War 3", price: 250.00, img: "assets/god3.webp" },
-        { name: "God of War: 2018", price: 300.00, img: "assets/god4.webp" },
-        { name: "God of War: Ragnarok", price: 350.00, img: "assets/god5.webp" },
-        { name: "Demon Souls", price: 300.00, img: "assets/demon_souls.png" },
+        { id: 1, name: "Ghost of Tsushima", price: 200.00, img: "assets/ghost.webp" },
+        { id: 2, name: "Elden Ring", price: 250.00, img: "assets/elden_ring.webp" },
+        { id: 3, name: "God of War", price: 150.00, img: "assets/god1.webp" },
+        { id: 4, name: "God of War 2", price: 200.00, img: "assets/god2.webp" },
+        { id: 5, name: "God of War 3", price: 250.00, img: "assets/god3.webp" },
+        { id: 6, name: "God of War: 2018", price: 300.00, img: "assets/god4.webp" },
+        { id: 7, name: "God of War: Ragnarok", price: 350.00, img: "assets/god5.webp" },
+        { id: 8, name: "Demon Souls", price: 300.00, img: "assets/demon_souls.png" },
     ];
+
+    let cart = [];
 
     function formatPrice(price) {
         return price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
     }
 
     function renderCards(gamesArray, containerId) {
+        $(`#${containerId}`).empty(); 
         gamesArray.forEach((game) => {
             const card = `
                 <div class="card" tabindex="0">
@@ -24,7 +27,7 @@ $(document).ready(function () {
                     <div class="card-details">
                         <h3>${game.name}</h3>
                         <p>${formatPrice(game.price)}</p>
-                        <button class="add-to-cart">Colocar no carrinho</button>
+                        <button class="add-to-cart" data-id="${game.id}" data-name="${game.name}" data-price="${game.price}" data-img="${game.img}">Adicionar ao carrinho</button>
                         <div class="rating">
                             ${'<span>⭐</span>'.repeat(5)}
                         </div>
@@ -35,34 +38,77 @@ $(document).ready(function () {
         });
     }
 
-    function shuffleArray(arr) {
-        for (let i = arr.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [arr[i], arr[j]] = [arr[j], arr[i]];
-        }
-        return arr;
+    renderCards(games, "favorites");
+    renderCards([...games].sort(() => 0.5 - Math.random()), "action");
+
+    $(document).on("click", ".add-to-cart", function () {
+        const gameId = $(this).data("id");
+        const gameName = $(this).data("name");
+        const gamePrice = $(this).data("price");
+        const gameImg = $(this).data("img");
+
+        cart.push({ id: gameId, name: gameName, price: gamePrice, img: gameImg });
+
+        updateCart();
+        alert(`${gameName} foi adicionado ao carrinho!`);
+    });
+
+    function updateCart() {
+        const cartContainer = $("#cart-items");
+        const totalPriceElement = $("#total-price");
+
+        cartContainer.empty();
+
+        let total = 0;
+        cart.forEach(item => {
+            const itemTotal = item.price;
+
+            const itemElement = `
+            <section class="cart-item">
+                <img src="${item.img}" alt="${item.name}" class="cart-img">
+                <p class="item-price-name">${item.name} - ${formatPrice(itemTotal)}</p>
+            </section>
+            `;
+
+            cartContainer.append(itemElement);
+            total += itemTotal;
+        });
+
+        totalPriceElement.html(`
+            <div class="cart-total">
+                <p class="cart-total">Total: ${formatPrice(total)}</p>
+            </div>
+        `);
     }
 
-    const shuffledGames = shuffleArray([...games]);
+    $("#clear-cart-btn").click(function () {
+        cart = [];
+        updateCart();
+        alert("Carrinho limpo!");
+    });
 
-    renderCards(games, "favorites");
+    $("#open-right-sidebar").click(function () {
+        $("#right-sidebar").toggleClass("open");
+    });
 
-    renderCards(shuffledGames, "action");
+    $("#close-cart").click(function () {
+        $("#right-sidebar").removeClass("open");
+    });
 
     $("#search-btn").click(function () {
-        const query = $("#search-input").val().toLowerCase();
-        $(".card").each(function () {
-            const title = $(this).find("h3").text().toLowerCase();
-            $(this).toggle(title.includes(query));
-        });
+        const searchText = $("#search-input").val().toLowerCase();
+
+        const filteredGames = games.filter((game) => 
+            game.name.toLowerCase().includes(searchText)
+        );
+
+        renderCards(filteredGames, "favorites");
+        renderCards(filteredGames, "action");
     });
 
-    $("#search-input").on("keypress", function (e) {
-        if (e.which === 13) $("#search-btn").click();
-    });
-    
-    $(document).on("click", ".add-to-cart", function () {
-        const gameName = $(this).closest(".card-details").find("h3").text();
-        alert(`"${gameName}" foi adicionado ao seu carrinho!`);
+    $("#search-input").keypress(function (e) {
+        if (e.which === 13) {
+            $("#search-btn").click();
+        }
     });
 });

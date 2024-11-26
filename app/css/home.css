@@ -12,9 +12,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    flex-direction: row;
     padding: 30px;
+    flex-direction: row;
 }
 
 .folder .plane {
@@ -25,6 +24,7 @@
     background-color: #757373;
     border-radius: 30px;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .folder .plane h2 {
@@ -98,4 +98,158 @@
 
 .games :hover {
     transform: scale(1.05);
+}
+
+.alert {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 9999;
+}
+
+.cart-full {
+    padding: 20px;
+}
+
+.cart-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-close-btn {
+    background-color: #f44336;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.cart-close-btn:hover {
+    background-color: #d32f2f;
+}
+
+.cart-items {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.cart-total {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin-right: 32px;
+}
+
+.cart-checkout-btn, .cart-clear-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-checkout-btn:hover, .cart-clear-btn:hover {
+    background-color: #45a049;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cart-item .item-price-name {
+    flex: 1;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .folder {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .folder .plane {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .folder .featured img {
+        width: 100%;
+        height: auto;
+    }
+
+    .games {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .games img {
+        width: 120px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .folder .plane h2 {
+        font-size: 1.2rem;
+    }
+
+    .folder .plane p {
+        font-size: 0.9rem;
+    }
+
+    .categories h2 {
+        font-size: 1rem;
+    }
+
+    .games img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .games {
+        justify-content: center;
+    }
 }
