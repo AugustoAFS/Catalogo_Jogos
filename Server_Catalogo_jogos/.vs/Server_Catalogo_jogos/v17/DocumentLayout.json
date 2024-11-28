@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\models\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:models\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T14:00:35.907Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\UserModel.cs",
+              "RelativeDocumentMoniker": "models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\UserModel.cs",
+              "RelativeToolTip": "models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T14:01:13.463Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameModel.cs",
+              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\GameModel.cs",
+              "RelativeDocumentMoniker": "models\\GameModel.cs",
+              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\GameModel.cs",
+              "RelativeToolTip": "models\\GameModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T14:01:35.942Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartModel.cs",
+              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\CartModel.cs",
+              "RelativeDocumentMoniker": "models\\CartModel.cs",
+              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\CartModel.cs",
+              "RelativeToolTip": "models\\CartModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T14:11:20.291Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
