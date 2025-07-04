@@ -1,22 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\",
+  "WorkspaceRootPath": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B793E44-D3C6-4D20-9A83-8F071D35641E}|..\\Teste_Teste1\\Teste_Teste1.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\teste_teste1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\models\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:models\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augustosantos\\desktop\\catalogo_jogos\\server_catalogo_jogos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\application\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:application\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\application\\services\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:application\\services\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\application\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:application\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|c:\\users\\augus\\onedrive\\desktop\\3_ano_tads_2023\\catalogo_jogos\\server_catalogo_jogos\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083F637-E5EF-4020-9A23-D33799D7E205}|Server_Catalogo_jogos.csproj|solutionrelative:application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,67 +61,173 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T14:00:35.907Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\UserModel.cs",
-              "RelativeDocumentMoniker": "models\\UserModel.cs",
-              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\UserModel.cs",
-              "RelativeToolTip": "models\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Teste_Teste1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\Teste_Teste1\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Teste_Teste1\\UnitTest1.cs",
+              "RelativeToolTip": "..\\Teste_Teste1\\UnitTest1.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T14:01:13.463Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-07-04T12:33:48.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GameModel.cs",
-              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\GameModel.cs",
-              "RelativeDocumentMoniker": "models\\GameModel.cs",
-              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\GameModel.cs",
-              "RelativeToolTip": "models\\GameModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Core\\Entities\\User.cs",
+              "RelativeToolTip": "Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T14:01:35.942Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-07-02T15:57:56.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CartModel.cs",
-              "DocumentMoniker": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\CartModel.cs",
-              "RelativeDocumentMoniker": "models\\CartModel.cs",
-              "ToolTip": "C:\\Users\\augustosantos\\Desktop\\Catalogo_Jogos\\Server_Catalogo_jogos\\models\\CartModel.cs",
-              "RelativeToolTip": "models\\CartModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T14:11:20.291Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T19:16:57.513Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\GameService.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\GameService.cs",
+              "RelativeToolTip": "Application\\Services\\GameService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:08:59.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RatingController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\RatingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RatingController.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\RatingController.cs",
+              "RelativeToolTip": "Controllers\\RatingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T16:02:05.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Controllers\\GameController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T16:01:39.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwG0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:06:03.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\CartService.cs",
+              "RelativeToolTip": "Application\\Services\\CartService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAwwC0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:15:00.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T16:01:02.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RatingService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\RatingService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\RatingService.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\RatingService.cs",
+              "RelativeToolTip": "Application\\Services\\RatingService.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAAwN0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:09:49.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\UserService.cs",
+              "RelativeToolTip": "Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:15:29.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAlwA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T16:00:19.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\3_ANO_TADS_2023\\Catalogo_Jogos\\Server_Catalogo_jogos\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAqwDkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T15:03:18.442Z"
             }
           ]
         }
