@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar_cart.css">
+    <link rel="stylesheet" href="css/sidebar_config.css">
+    <link rel="stylesheet" href="css/card_opacidade.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <title>Catálogo de Jogos</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <button id="open-left-sidebar">
+                <img src="assets/icones/Personagem.webp" alt="Personagem">
+            </button>
+            <span id="user-name" class="user-name" style="display: none;"></span>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">PROMOÇÃO</a></li>
+                <li><a href="#">AJUDA</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <form class="search" role="search">
+                <input type="text" id="search-input" placeholder="Pesquisar..." aria-label="Pesquisar jogos">
+                <button type="button" id="clear-search" aria-label="Limpar busca" title="Limpar busca">
+                    <i class="fi fi-rr-cross"></i>
+                </button>
+                <button type="button" id="search-btn" aria-label="Buscar">
+                    <i class="fi fi-rr-search"></i>
+                </button>
+            </form>
+            <div class="coin"><button>Coin:<img src="assets/icones/coin.webp" alt=""></button></div>
+            <div class="cart"><button id="open-right-sidebar"><img src="assets/icones/carrinho-de-compras.webp" alt=""></button></div>
+        </div>
+    </header>
+    <aside class="left-sidebar" id="left-sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="sidebar-close-btn" id="close-left-sidebar">
+                <i class="fi fi-rr-cross"></i>
+            </button>
+        </div>
+        
+        <nav aria-label="Menu lateral">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fi fi-rr-heart"></i>
+                        <span>Lista de desejos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fi fi-rr-interrogation"></i>
+                        <span>Ajuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fi fi-rr-settings"></i>
+                        <span>Configurações</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="auth-section">
+            <button id="login-btn" class="auth-btn login-btn">
+                <i class="fi fi-rr-sign-in"></i>
+                <span>Entrar</span>
+            </button>
+            <button id="logout-btn" class="auth-btn logout-btn" style="display: none;">
+                <i class="fi fi-rr-sign-out"></i>
+                <span>Sair</span>
+            </button>
+        </div>
+
+        <div class="sidebar-footer">
+            <button class="sidebar-plus-btn">
+                <i class="fi fi-rr-star"></i>
+                <span>Augusto Games+</span>
+            </button>
+        </div>
+    </aside>
+    <div class="container">
+        <main>
+            <section class="folder">
+                <div class="plane">
+                    <h2>Video Game<br>Catálogo</h2>
+                    <p>1.358 Jogos</p>
+                    <p>Criamos este catálogo de games para que vocês, consumidores, aproveitem o que há de melhor no mercado de games, com um preço justo.</p>
+                    <button>Augusto Games+</button>
+                </div>
+                <section class="featured">
+                    <img src="assets/folders/baner_ghost.png" alt="Jogo em destaque">
+                </section>
+            </section>
+            <section class="categories">
+                <h2>Favoritos</h2>
+                <div class="games-container">
+                    <button class="carousel-btn prev" id="prev-favorites">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </button>
+                    <div class="games-wrapper" id="favorites-wrapper">
+                        <div class="games" id="favorites">
+                            <!-- Os cards de jogos são inseridos aqui via JS como <article> -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="next-favorites">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </button>
+                </div>
+                
+                <h2>Ação</h2>
+                <div class="games-container">
+                    <button class="carousel-btn prev" id="prev-action">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </button>
+                    <div class="games-wrapper" id="action-wrapper">
+                        <div class="games" id="action">
+                            <!-- Os cards de jogos são inseridos aqui via JS como <article> -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="next-action">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </button>
+                </div>
+                
+                <h2>RPG</h2>
+                <div class="games-container">
+                    <button class="carousel-btn prev" id="prev-rpg">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </button>
+                    <div class="games-wrapper" id="rpg-wrapper">
+                        <div class="games" id="rpg">
+                            <!-- Os cards de jogos são inseridos aqui via JS como <article> -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="next-rpg">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </button>
+                </div>
+                
+                <h2>Aventura</h2>
+                <div class="games-container">
+                    <button class="carousel-btn prev" id="prev-adventure">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </button>
+                    <div class="games-wrapper" id="adventure-wrapper">
+                        <div class="games" id="adventure">
+                            <!-- Os cards de jogos são inseridos aqui via JS como <article> -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="next-adventure">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </button>
+                </div>
+                
+                <h2>Corrida</h2>
+                <div class="games-container">
+                    <button class="carousel-btn prev" id="prev-racing">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </button>
+                    <div class="games-wrapper" id="racing-wrapper">
+                        <div class="games" id="racing">
+                            <!-- Os cards de jogos são inseridos aqui via JS como <article> -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="next-racing">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </button>
+                </div>
+                
+                <h2>Estratégia</h2>
+                <div class="games-container">
+                    <button class="carousel-btn prev" id="prev-strategy">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </button>
+                    <div class="games-wrapper" id="strategy-wrapper">
+                        <div class="games" id="strategy">
+                            <!-- Os cards de jogos são inseridos aqui via JS como <article> -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="next-strategy">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </button>
+                </div>
+                
+                <h2>Indie</h2>
+                <div class="games-container">
+                    <button class="carousel-btn prev" id="prev-indie">
+                        <i class="fi fi-rr-angle-left"></i>
+                    </button>
+                    <div class="games-wrapper" id="indie-wrapper">
+                        <div class="games" id="indie">
+                            <!-- Os cards de jogos são inseridos aqui via JS como <article> -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" id="next-indie">
+                        <i class="fi fi-rr-angle-right"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>©Augusto Farias dos Santos - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <div class="right-sidebar" id="right-sidebar">
+        <div class="cart-full">
+            <h3 class="cart-title">🛒 Carrinho</h3>
+            
+            <button class="cart-close-btn" id="close-cart">
+                <i class="fi fi-rr-cross"></i>
+            </button>
+
+            <div class="cart-items" id="cart-items">
+                <!-- Os itens do carrinho são inseridos aqui via JavaScript -->
+            </div>
+            
+            <div class="cart-total">
+                <span class="cart-total-label">Total:</span>
+                <span class="cart-total-price" id="total-price">R$ 0,00</span>
+            </div>
+
+            <button class="cart-checkout-btn" id="checkout-btn">
+                <i class="fi fi-rr-shopping-cart-check"></i>
+                <span>Finalizar Compra</span>
+            </button>
+            
+            <button class="cart-clear-btn" id="clear-cart-btn">
+                <i class="fi fi-rr-trash"></i>
+                <span>Limpar Carrinho</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/Rating.js"></script>
+    <script src="js/Card-Games.js"></script>
+    <script src="js/Cart.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

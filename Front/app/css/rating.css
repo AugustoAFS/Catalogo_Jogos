@@ -1,0 +1,702 @@
+/* Notificações */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    z-index: 10001;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border-left: 4px solid #155724;
+}
+
+.notification.error {
+    background: linear-gradient(135deg, #dc3545, #e74c3c);
+    border-left: 4px solid #721c24;
+}
+
+.notification.warning {
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    border-left: 4px solid #856404;
+    color: #000;
+}
+
+.notification.info {
+    background: linear-gradient(135deg, #17a2b8, #6f42c1);
+    border-left: 4px solid #0c5460;
+}
+
+/* Container principal de avaliação */
+.rating-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    padding: 30px;
+    z-index: 1000;
+    min-width: 400px;
+    max-width: 500px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+}
+
+/* Modal de avaliação */
+.rating-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.rating-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.rating-content {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    z-index: 10001;
+}
+
+.rating-modal.show .rating-content {
+    transform: scale(1);
+}
+
+/* Header da avaliação */
+.rating-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.rating-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: #ffd700;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+    background: rgba(255, 215, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Informações do jogo */
+.rating-game-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.rating-game-info img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+}
+
+.rating-game-info h4 {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Seções do formulário */
+.rating-section {
+    margin-bottom: 20px;
+}
+
+.rating-section label {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Sistema de estrelas */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.star-rating .star {
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.star-rating .star:hover {
+    color: #ffd700 !important;
+    transform: scale(1.2);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.star-rating .star.active {
+    color: #ffd700 !important;
+    transform: scale(1.1);
+    background: rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.star-rating .star.active i {
+    color: #ffd700 !important;
+}
+
+.star-rating .star i {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de clique */
+.star-rating .star:active {
+    transform: scale(0.95);
+}
+
+/* Efeito de preenchimento suave */
+.star-rating .star.active {
+    animation: starFill 0.3s ease-in-out;
+}
+
+@keyframes starFill {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Área de comentário */
+.rating-section textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    resize: vertical;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.rating-section textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.rating-section textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Botões de ação */
+.rating-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.cancel-rating,
+#submit-rating {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+#submit-rating {
+    background: linear-gradient(135deg, #ffd700, #ffb347);
+    color: #000;
+}
+
+#submit-rating:hover {
+    background: linear-gradient(135deg, #ffb347, #ffd700);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+.cancel-rating {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cancel-rating:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Sistema de estrelas */
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.rating-stars .star {
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.rating-stars .star:hover,
+.rating-stars .star.hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+.rating-stars .star.active {
+    color: #ffd700;
+}
+
+/* Área de comentário */
+.rating-comment {
+    margin-bottom: 25px;
+}
+
+.rating-comment textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+.rating-comment textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.rating-comment textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Botões de ação */
+.rating-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.rating-submit-btn,
+.rating-cancel-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.rating-submit-btn {
+    background: linear-gradient(135deg, #ffd700, #ffb347);
+    color: #000;
+}
+
+.rating-submit-btn:hover {
+    background: linear-gradient(135deg, #ffb347, #ffd700);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+.rating-cancel-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.rating-cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Display de avaliação nos cards */
+.rating-display {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.rating-stars-display {
+    display: flex;
+    gap: 2px;
+}
+
+.rating-stars-display .star {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.rating-stars-display .star.filled {
+    color: #ffd700 !important;
+    font-size: 20px;
+    text-shadow: 0 0 8px #ffd70099;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.rating-stars-display .star.partial {
+    color: #ffd700;
+    opacity: 0.7;
+}
+
+.rating-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.rating-average {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rating-count {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+}
+
+/* Botão de avaliar no card */
+.rate-game-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 215, 0, 0.9);
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.game-card:hover .rate-game-btn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.rate-game-btn:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+}
+
+.rating-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .rating-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .rating-stars .star {
+        font-size: 28px;
+    }
+
+    .rating-actions {
+        flex-direction: column;
+    }
+
+    .rating-submit-btn,
+    .rating-cancel-btn {
+        width: 100%;
+    }
+
+    .rating-header-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .rating-stars-display {
+        align-self: flex-end;
+    }
+
+    .ratings-list {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rating-content {
+        padding: 15px;
+    }
+
+    .rating-header h3 {
+        font-size: 18px;
+    }
+
+    .rating-stars .star {
+        font-size: 24px;
+    }
+
+    .rating-item {
+        padding: 12px;
+    }
+
+    .rating-username {
+        font-size: 13px;
+    }
+
+    .rating-comment-text {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* Feedback da avaliação */
+.rating-feedback {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.rating-feedback.text-muted {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.rating-feedback.text-danger {
+    color: #ff6b6b;
+}
+
+.rating-feedback.text-warning {
+    color: #ffd93d;
+}
+
+.rating-feedback.text-info {
+    color: #4ecdc4;
+}
+
+.rating-feedback.text-success {
+    color: #6bcf7f;
+}
+
+.rating-feedback.text-primary {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Seção de avaliações existentes */
+.existing-ratings-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.existing-ratings-section h4 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ratings-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.rating-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.rating-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 215, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.rating-header-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rating-username {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rating-date {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+}
+
+.rating-stars-display {
+    display: flex;
+    gap: 2px;
+}
+
+.rating-stars-display .star {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.rating-stars-display .star.filled {
+    color: #ffd700;
+}
+
+.rating-comment-text {
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.loading-ratings {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    padding: 20px;
+}
+
+.no-ratings {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+/* Scrollbar personalizada para a lista de avaliações */
+.ratings-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ratings-list::-webkit-scrollbar-track {
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 3px;
+}
+
+.ratings-list::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 3px;
+}
+
+.ratings-list::-webkit-scrollbar-thumb:hover {
+    background: #ffb347;
+} 
